@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+      setInterval(()=>{
+      document.getElementById('hour').innerHTML = `${new Date().getHours()}:`
+      document.getElementById('minutes').innerHTML= `${new Date().getMinutes()}:`
+      document.getElementById('seconds').innerHTML= `${new Date().getSeconds()}`
+      }, 1000)
+    </script>
+</head>
+
+<body>
+    <div style="width: 200px;">
+        <div style="display: flex; justify-content: space-between;">
+            <h1 id="hour">08</h1>
+            <h1 id="minutes">30</h1>
+            <h1 id="seconds"></h1>
+        </div>
+    </div>
+
+</body>
+
+</html>
